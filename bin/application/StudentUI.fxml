@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentUIController">
+   <children>
+      <Button fx:id="attend" layoutX="349.0" layoutY="360.0" mnemonicParsing="false" onAction="#attendButton" text="Attend">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="register" layoutX="238.0" layoutY="360.0" mnemonicParsing="false" onAction="#registerButton" text="Register">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="search" layoutX="471.0" layoutY="91.0" mnemonicParsing="false" onAction="#searchButton" text="Search">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="complete" layoutX="448.0" layoutY="360.0" mnemonicParsing="false" onAction="#completeButton" text="Complete">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="enroll" layoutX="88.0" layoutY="360.0" mnemonicParsing="false" onAction="#enrollButton" text="Enrolled Courses">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Label layoutX="80.0" layoutY="140.0" text="Course Id :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="193.0" layoutY="35.0" prefHeight="49.0" prefWidth="215.0" text="WELCOME">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="view" layoutX="79.0" layoutY="166.0" prefHeight="172.0" prefWidth="445.0" />
+      <TextField fx:id="text" alignment="CENTER" layoutX="119.0" layoutY="92.0" prefHeight="25.0" prefWidth="345.0" promptText="Enter Course Title">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <Button layoutX="25.0" layoutY="23.0" mnemonicParsing="false" onAction="#logout" text="Log Out">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <TextField fx:id="id" layoutX="374.0" layoutY="137.0" promptText="Student ID" />
+      <Label layoutX="349.0" layoutY="140.0" text="Id :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cId" layoutX="152.0" layoutY="137.0" promptText="Offer Course ID" />
+   </children>
+</AnchorPane>
